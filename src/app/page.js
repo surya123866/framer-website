@@ -63,23 +63,23 @@ export default function Home() {
         </div>
       </section>
       <section
-        className="flex flex-col lg:flex-row justify-center items-center w-full p-5 gap-10 "
+        className="flex flex-col lg:flex-row flex-none justify-start items-start lg:flex-1 flex-nowrap h-min overflow-hidden relative p-5 gap-10 "
         id="AboutMe"
       >
-        <div className="w-full lg:w-1/4 relative">
-          <div className="lg:w-[380px] lg:h-[410px] w-[310px] h-[340px] rounded-3xl bg-[#e4e8ff] absolute top-10 left-0" />
+        <div className="flex-none w-[411px] h-[478px] relative">
+          <div className="lg:w-[377px] lg:h-[448px] w-[310px] h-[340px] rounded-3xl rounded-br-[64px] bg-[#e4e8ff] absolute top-10 left-10" />
           <img
             src="https://framerusercontent.com/images/mcS8HbfkOswpZVvZdgcSiPjGmKQ.jpg"
-            className="lg:w-[350px] lg:h-[410px] w-[280px] h-[350px] rounded-3xl absolute top-0 left-0"
+            className="lg:w-[367px] lg:h-[434px] w-[280px] h-[350px] rounded-3xl absolute top-0 left-0"
           />
-          <div className="flex flex-col justify-center items-center lg:w-[170px] lg:h-[100px] w-[160px] h-[80px] rounded-xl bg-[#e4e8ff] absolute top-[300px] lg:top-[350px] font-poppins">
+          <div className="flex flex-col justify-center items-center lg:w-[193px] lg:h-[100px] w-[160px] h-[80px] rounded-3xl bg-[#e4e8ff] absolute -bottom-2">
             <p className=" text-lg font-medium ">Sarah Mitchell</p>
             <p className="leading-[1]">Digital designer</p>
           </div>
         </div>
 
-        <div className="w-full lg:w-3/4 flex flex-col justify-center items-center lg:items-start gap-8">
-          <h3 className="text-[#212425] text-xl lg:text-5xl  lg:text-left">
+        <div className="flex-1 flex flex-col flex-nowrap justify-center items-center lg:items-start relative gap-8">
+          <h3 className="text-[#212425] text-xl lg:text-5xl lg:text-left">
             I’m a <span className="text-[#006cff]">digital storyteller</span>. I
             believe that a well-designed website has the power to leave a
             lasting impression. With years of experience in the industry, I’ve
