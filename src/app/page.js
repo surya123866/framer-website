@@ -6,43 +6,45 @@ export default function Home() {
     <>
       <Navbar />
       <section
-        className="flex justify-center items-center w-full h-96 lg:h-screen p-5 lg:p-10"
+        className="flex justify-center items-center w-full h-screen lg:h-screen p-5 lg:p-10"
         id="Home"
       >
-        <div className="flex lg:gap-10 ">
-          <div className="w-full animate-floating top-44 left-[250px] lg:top-96 lg:left-[1100px] absolute">
-            <img
-              src="https://framerusercontent.com/images/fzeXJkxBIc747kIIbAww2FTbk.png"
-              alt=""
-              className="w-16 lg:w-32"
-            />
-          </div>
-          <div className="w-full animate-floating top-5 left-22 lg:top-10 lg:left-84 absolute">
-            <img
-              src="https://framerusercontent.com/images/E2TV0iS7BwvUZzl8JAyQYSw7DD4.png"
-              alt=""
-              className="w-24 lg:w-44"
-            />
-          </div>
-          <div className="w-full animate-floating left-14 lg:left-96 absolute">
+        <div className="flex flex-row lg:gap-10 ">
+          <div className="w-full lg:w-auto">
             <img
               src="https://framerusercontent.com/images/zryge5Sij93RIbadZRaaXHodlg.png"
               alt=""
-              className="w-20 lg:w-40"
+              className="w-32 lg:w-40 animate-floating absolute top-64 lg:top-96 lg:bottom-96 left-0 lg:left-96"
+            />
+          </div>
+          <div className="w-full lg:w-auto">
+            <img
+              src="https://framerusercontent.com/images/E2TV0iS7BwvUZzl8JAyQYSw7DD4.png"
+              alt=""
+              className="w-24 lg:w-44 animate-floating  absolute bottom-[450px] lg:top-10 left-20  lg:left-[600px]"
+            />
+          </div>
+          <div className="w-full lg:w-auto ">
+            <img
+              src="https://framerusercontent.com/images/fzeXJkxBIc747kIIbAww2FTbk.png"
+              alt=""
+              className="w-24 lg:w-36 animate-floating absolute top-60 lg:top-96 left-64 lg:left-[1100px]"
             />
           </div>
         </div>
-        <div className="absolute mt-10">
-          <div className="flex flex-col justify-center items-center">
+        <div className="absolute w-full lg:mt-20 p-10">
+          <div className="w-full">
             <div className="text-center">
-              <p className="text-[#000000] text-[80px] lg:text-[268px] font-medium leading-[1]">
+              <p className="text-[#000000] text-[96px] lg:text-[268px] font-bold leading-[1]">
                 Sarah <br />
-                <span className="leading-[1] font-normal">Mitchell</span>
+                <span className="leading-[1] text-[76px] lg:text-[268px] font-light lg:font-poppins">
+                  Mitchell
+                </span>
               </p>
             </div>
           </div>
-          <div className="w-full">
-            <div className="flex justify-center items-center gap-4 bg-[#006cff] rounded-full p-4 w-60 mt-4">
+          <div className="flex lg:justify-start items-center w-full mt-40 lg:mt-0 lg:ml-40">
+            <div className="flex justify-center items-center gap-4 bg-[#006CFF] hover:bg-[#1900ff] rounded-full p-4 w-full lg:w-60 mt-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -54,7 +56,6 @@ export default function Home() {
                   fill="#ffffff"
                 />
               </svg>
-
               <p className="text-[#ffffff] text-base font-semibold">
                 check out my work
               </p>
@@ -62,19 +63,20 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       <section
-        className="flex flex-col lg:flex-row flex-none justify-start items-start lg:flex-1 flex-nowrap h-min overflow-hidden relative p-5 gap-10 "
+        className="w-full flex flex-col lg:flex-row justify-center lg:flex-1 flex-nowrap overflow-hidden relative p-5 lg:p-10 gap-0 lg:gap-10"
         id="AboutMe"
       >
-        <div className="flex-none w-[411px] h-[478px] relative">
-          <div className="lg:w-[377px] lg:h-[448px] w-[310px] h-[340px] rounded-3xl rounded-br-[64px] bg-[#e4e8ff] absolute top-10 left-10" />
+        <div className="w-[411px] h-[478px] relative">
+          <div className="lg:w-[377px] lg:h-[448px] w-[255px] h-[330px] rounded-3xl rounded-br-[64px] bg-[#e4e8ff] absolute top-10 left-10" />
           <img
             src="https://framerusercontent.com/images/mcS8HbfkOswpZVvZdgcSiPjGmKQ.jpg"
-            className="lg:w-[367px] lg:h-[434px] w-[280px] h-[350px] rounded-3xl absolute top-0 left-0"
+            className="ml-3 lg:ml-0 lg:w-[367px] lg:h-[434px] w-[265px] h-[340px] rounded-3xl absolute top-0 left-0"
           />
-          <div className="flex flex-col justify-center items-center lg:w-[193px] lg:h-[100px] w-[160px] h-[80px] rounded-3xl bg-[#e4e8ff] absolute -bottom-2">
+          <div className="flex flex-col justify-center items-center lg:w-[193px] lg:h-[100px] w-[160px] h-[75px] rounded-3xl bg-[#e4e8ff] absolute bottom-[108px] lg:-bottom-2">
             <p className=" text-lg font-medium ">Sarah Mitchell</p>
-            <p className="leading-[1]">Digital designer</p>
+            <p>Digital designer</p>
           </div>
         </div>
 
@@ -105,35 +107,37 @@ export default function Home() {
       </section>
 
       <section
-        className="flex flex-col items-center w-full gap-7 p-10"
+        className="flex flex-col items-center w-full gap-4 lg:gap-7 p-5 lg:p-10"
         id="Cases"
       >
         <div className="w-full">
-          <h1 className="lg:text-[72px] font-semibold text-[#000000] text-4xl">
+          <h1 className="lg:text-[72px] font-medium text-[#000000] text-3xl lg:text-4xl">
             I help brands to drive results
             <span className="text-[#006cff]">.</span>
           </h1>
         </div>
         <div className="flex flex-col  gap-10 w-full">
           <div className="flex flex-col  lg:flex-row gap-5 w-full">
-            <div className="w-full lg:w-1/2 flex flex-col gap-7">
+            <div className="w-full lg:w-1/2 flex flex-col gap-2 lg:gap-7">
               <div className="hover:scale-95 transition-transform duration-300 ease-out">
                 <img
                   src="https://framerusercontent.com/images/hgkedkVkKB4C6AJXYbXRwWHVvKk.png?scale-down-to=512"
-                  className="w-full h-[450px]"
+                  className="w-full lg:h-[450px]"
                 />
               </div>
               <div>
-                <p className="text-[#707070] text-lg">
+                <p className="text-[#707070] text-base lg:text-lg">
                   marketing website redesign
                 </p>
-                <p className="text-[#006cff] text-5xl">Young brevers</p>
+                <p className="text-[#006cff] text-3xl lg:text-5xl">
+                  Young brevers
+                </p>
               </div>
-              <p className="text-[#707070] text-lg">
+              <p className="text-[#707070] text-base lg:text-lg">
                 New branding and optimised SEO to bring their products to a
                 wider target audience
               </p>
-              <div className="flex justify-center items-center gap-4 bg-[#4C48FF] hover:bg-[#006cff] rounded-3xl w-36 p-2">
+              <div className="flex justify-center items-center gap-2 bg-[#4C48FF] hover:bg-[#006cff] rounded-3xl  lg:w-40 p-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -148,25 +152,25 @@ export default function Home() {
                 <p className="text-lg text-[#ffffff]">View case</p>
               </div>
             </div>
-            <div className="w-full lg:w-1/2 flex flex-col gap-7">
+            <div className="w-full lg:w-1/2 flex flex-col gap-2 lg:gap-7">
               <div className="hover:scale-95 transition-transform duration-300 ease-out">
                 <img
                   src="https://framerusercontent.com/images/NvwVqA2cc2VOr8ynoXO4JLQbgpM.png?scale-down-to=512"
-                  className="h-[450px]"
+                  className="w-full lg:h-[450px]"
                 />
               </div>
 
               <div>
-                <p className="text-[#707070] text-lg">
+                <p className="text-[#707070] text-base lg:text-lg">
                   marketing website redesign
                 </p>
-                <p className="text-[#006cff] text-5xl">Doid</p>
+                <p className="text-[#006cff] text-3xl lg:text-5xl">Doid</p>
               </div>
-              <p className="text-[#707070] text-lg">
+              <p className="text-[#707070] text-base lg:text-lg">
                 New branding and optimised SEO to bring their products to a
                 wider target audience
               </p>
-              <div className="flex justify-center items-center gap-4 bg-[#4C48FF] hover:bg-[#006cff] rounded-3xl w-36 p-2">
+              <div className="flex justify-center items-center gap-2 bg-[#4C48FF] hover:bg-[#006cff] rounded-3xl lg:w-40 p-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -183,24 +187,24 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col  lg:flex-row gap-5 w-full">
-            <div className="w-full lg:w-1/2 flex flex-col gap-7">
+            <div className="w-full lg:w-1/2 flex flex-col gap-2 lg:gap-7">
               <div className="hover:scale-95 transition-transform duration-300 ease-out">
                 <img
                   src="https://framerusercontent.com/images/p9GCIdND3wX9DEnEqfed3by4Rrc.png?scale-down-to=512"
-                  className="w-full h-[450px]"
+                  className="w-full lg:h-[450px]"
                 />
               </div>
               <div>
-                <p className="text-[#707070] text-lg">
+                <p className="text-[#707070] text-base lg:text-lg">
                   marketing website redesign
                 </p>
-                <p className="text-[#006cff] text-5xl">Bird</p>
+                <p className="text-[#006cff] text-3xl lg:text-5xl">Bird</p>
               </div>{" "}
-              <p className="text-[#707070] text-lg">
+              <p className="text-[#707070] text-base lg:text-lg">
                 New branding and optimised SEO to bring their products to a
                 wider target audience
               </p>
-              <div className="flex justify-center items-center gap-4 bg-[#4C48FF] hover:bg-[#006cff] rounded-3xl w-36 p-2">
+              <div className="flex justify-center items-center gap-2 bg-[#4C48FF] hover:bg-[#006cff] rounded-3xl lg:w-40 p-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -215,24 +219,24 @@ export default function Home() {
                 <p className="text-lg text-[#ffffff]">View case</p>
               </div>
             </div>
-            <div className="w-full lg:w-1/2 flex flex-col gap-7">
+            <div className="w-full lg:w-1/2 flex flex-col gap-2 lg:gap-7">
               <div className="hover:scale-95 transition-transform duration-300 ease-out">
                 <img
                   src="https://framerusercontent.com/images/wTyyIe6VkYknt5wcUfcrP3veI.png?scale-down-to=512"
-                  className="w-full h-[450px]"
+                  className="w-full lg:h-[450px]"
                 />
               </div>
               <div>
-                <p className="text-[#707070] text-lg">
+                <p className="text-[#707070] text-base lg:text-lg">
                   marketing website redesign
                 </p>
-                <p className="text-[#006cff] text-5xl">Mansion</p>
+                <p className="text-[#006cff] text-3xl lg:text-5xl">Mansion</p>
               </div>
-              <p className="text-[#707070] text-lg">
+              <p className="text-[#707070] text-base lg:text-lg">
                 New branding and optimised SEO to bring their products to a
                 wider target audience
               </p>
-              <div className="flex justify-center items-center gap-4 bg-[#4C48FF] hover:bg-[#006cff] rounded-3xl w-36 p-2">
+              <div className="flex justify-center items-center gap-2 bg-[#4C48FF] hover:bg-[#006cff] rounded-3xl lg:w-40 p-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -250,18 +254,18 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col gap-20 m-14">
-        <h1 className="text-[44px]">
+      <section className="flex flex-col gap-10 lg:gap-20 m-10">
+        <h1 className="text-[32px] lg:text-[44px]">
           What do I prefer<span className="text-[#006cff]">?</span>
         </h1>
-        <div className="flex gap-20 lg:flex-row w-full flex-col">
+        <div className="flex gap-5 lg:gap-20 lg:flex-row w-full flex-col">
           <div className="w-full lg:w-1/3">
             <img
               src="	https://framerusercontent.com/images/RMfc5ukZ26kPzKxfW36D6npc.png"
               className="w-80 hover:scale-110 hover:rotate-12 transition-transform duration-500 ease-in-out"
             />
             <div className="flex flex-col gap-5">
-              <p className="text-4xl font-normal">Research</p>
+              <p className="text-3xl lg:text-4xl font-normal">Research</p>
               <p className="text-lg">
                 Whether it's refining strategies, delving into emerging trends,
                 or uncovering untapped opportunities, count on continuous
@@ -275,7 +279,7 @@ export default function Home() {
               className="w-80 hover:scale-110 hover:rotate-12 transition-transform duration-500 ease-in-out"
             />
             <div className="flex flex-col gap-5">
-              <p className="text-4xl font-normal"> Storytelling</p>
+              <p className="text-3xl lg:text-4xl font-normal"> Storytelling</p>
               <p className="text-lg">
                 Now, let’s ensure that its story continues to captivate and
                 resonate. Whether it's tweaking the narrative, enhancing
@@ -290,7 +294,7 @@ export default function Home() {
               className="w-80 hover:scale-110 hover:rotate-12 transition-transform duration-500 ease-in-out"
             />
             <div className="flex flex-col gap-5">
-              <p className="text-4xl font-normal">Design</p>
+              <p className="text-3xl lg:text-4xl font-normal">Design</p>
               <p className="text-lg">
                 From concept to creation, I immerse myself shaping aesthetics
                 and functionality. Let's collaborate and explore designs that
@@ -300,13 +304,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col w-full gap-8 p-10 lg:flex">
-        <h1 className="text-5xl">
+      <section className="flex flex-col w-full gap-8 p-10">
+        <h1 className="text-4xl lg:text-5xl">
           Words from my clients<span className="text-[#006cff]">.</span>
         </h1>
-        <div className="lg:flex-row flex flex-col justify-center w-full gap-5">
+        <div className="lg:flex-row flex flex-col justify-center w-full gap-5 lg:gap-10 items-center">
           <div className="flex flex-col gap-6">
-            <div className="flex flex-col bg-[#006cff] w-[370px]  lg:w-[670px] text-xl rounded-3xl p-10 gap-8 text-[#ffff] hover:scale-95 transition-transform duration-300 ease-out">
+            <div className="flex flex-col bg-[#006cff] w-[300px]  lg:w-[670px] text-xl rounded-3xl p-5 lg:p-10 gap-8 text-[#ffff] hover:scale-95 transition-transform duration-300 ease-out">
               <div className="flex gap-4 items-center">
                 <img
                   src="https://framerusercontent.com/images/Bbld8fk910CkDLFdnalL0hVwEyQ.png"
@@ -326,7 +330,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col bg-[#AFBEFF] w-[370px]  lg:w-[670px] text-xl rounded-3xl p-10 gap-8 hover:scale-95 transition-transform duration-300 ease-out">
+            <div className="flex flex-col bg-[#AFBEFF] w-[300px]  lg:w-[670px] text-xl rounded-3xl p-5 lg:p-10 gap-8 text-[#ffff] hover:scale-95 transition-transform duration-300 ease-out">
               <div className="flex gap-4 items-center">
                 <img
                   src="https://framerusercontent.com/images/8RCURcX9o1dlvkMQxlL6l1te4.png"
@@ -349,7 +353,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col gap-6 lg:mt-16">
-            <div className="flex flex-col bg-[#006cff] w-[370px]  lg:w-[670px] text-xl rounded-3xl p-10 gap-8 text-[#ffff] hover:scale-95 transition-transform duration-300 ease-out">
+            <div className="flex flex-col bg-[#006cff] w-[300px]  lg:w-[670px] text-xl rounded-3xl p-5 lg:p-10 gap-8 text-[#ffff] hover:scale-95 transition-transform duration-300 ease-out">
               <div className="flex gap-4 items-center ">
                 <img
                   src="https://framerusercontent.com/images/rSEvY5HrQ38VtSIACRUrWLm94o.png"
@@ -369,7 +373,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col bg-[#E4E8FF] w-[370px]  lg:w-[670px] text-xl rounded-3xl p-10 gap-8 hover:scale-95 transition-transform duration-300 ease-ou">
+            <div className="flex flex-col bg-[#E4E8FF] w-[300px]  lg:w-[670px] text-xl rounded-3xl p-5 lg:p-10 gap-8 hover:scale-95 transition-transform duration-300 ease-out">
               <div className="flex gap-4 items-center text-lg">
                 <img
                   src="https://framerusercontent.com/images/IqR6lez7vmXSXnR1clyhtioBO0.jpg?scale-down-to=512"

@@ -20,8 +20,16 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed flex flex-col justify-center items-center w-full mb-20 z-50 mt-8">
-      <div className="flex justify-around items-center lg:bg-gradient-to-b bg-[#FBF4EC] from-[#FBF4EC] to-transparent rounded-3xl p-5 mx-auto w-3/4">
+    <div
+      className={`fixed flex flex-col justify-center items-center w-full mb-20 z-50 mt-4 lg:mt-8 ${
+        mobileMenu ? "mt-0" : ""
+      }`}
+    >
+      <div
+        className={`lg:flex justify-around items-center lg:bg-gradient-to-b bg-[#FBF4EC] from-[#FBF4EC] to-transparent rounded-3xl p-5 mx-auto w-3/4 ${
+          mobileMenu ? "hidden" : ""
+        }`}
+      >
         <nav className="flex justify-between w-full">
           <div className="flex items-center text-2xl text-[#212425] font-bold">
             LOGO
@@ -61,8 +69,7 @@ const Navbar = () => {
                 className="flex flex-col gap-1 items-center justify-center w-5"
                 onClick={() => setMobileMenu(!mobileMenu)}
               >
-                <span className="h-1 w-6 bg-[#000000]"></span>
-                <span className="h-1 w-6 bg-[#000000]"></span>
+                <span className="text-5xl">=</span>
               </div>
             )}
           </div>
@@ -70,7 +77,54 @@ const Navbar = () => {
       </div>
       {/* Mobile menu outside of the container */}
       {mobileMenu && (
-        <div className="flex relative flex-col justify-between bg-white w-full h-screen space-y-4">
+        <div className="flex relative flex-col justify-around bg-white w-full h-screen">
+          <div className="flex justify-around items-center lg:bg-gradient-to-b bg-[#FBF4EC] from-[#FBF4EC] to-transparent rounded-3xl p-5 mx-auto w-3/4">
+            <nav className="flex justify-between w-full">
+              <div className="flex items-center text-2xl text-[#212425] font-bold">
+                LOGO
+              </div>
+              <div className="hidden lg:flex gap-20 text-xl text-[#212425] font-normal">
+                <p onClick={() => scrollToSection("Home")}>Home</p>
+                <p onClick={() => scrollToSection("AboutMe")}>About me</p>
+                <p onClick={() => scrollToSection("Cases")}>Cases</p>
+              </div>
+              <div className="hidden lg:flex items-center">
+                <a href="mailto:your-email@example.com">
+                  <button className="flex items-center gap-4 text-xl text-[#212425] font-normal">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7" />
+                    </svg>
+                    Let's connect
+                  </button>
+                </a>
+              </div>
+              <div className="relative lg:hidden">
+                {mobileMenu ? (
+                  // Close button when mobileMenu is true
+                  <div
+                    className="flex flex-col gap-1 items-center justify-center w-5"
+                    onClick={() => setMobileMenu(false)}
+                  >
+                    <h1 className="text-4xl">x</h1>
+                  </div>
+                ) : (
+                  // Mobile menu toggle button when mobileMenu is false
+                  <div
+                    className="flex flex-col gap-1 items-center justify-center w-5"
+                    onClick={() => setMobileMenu(!mobileMenu)}
+                  >
+                    <span className="h-1 w-6 bg-[#000000]"></span>
+                    <span className="h-1 w-6 bg-[#000000]"></span>
+                  </div>
+                )}
+              </div>
+            </nav>
+          </div>
           <div className=" w-full top-0 left-0 right-0 z-50 flex flex-col items-start justify-start">
             <div className="flex justify-between items-center w-full p-5">
               <button className="px-4 py-2 rounded-2xl text-2xl font-semibold text-[#000000]">
