@@ -1,24 +1,9 @@
 "use client";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const Navbar = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
-
-  const mobileMenuScrollToSection = (id) => {
-    setMobileMenu(false);
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <div
       className={`fixed flex flex-col justify-center items-center w-full mb-20 z-50 mt-4 lg:mt-8 ${
@@ -31,13 +16,21 @@ const Navbar = () => {
         }`}
       >
         <nav className="flex justify-between w-full">
-          <div className="flex items-center text-2xl text-[#212425] font-bold">
-            LOGO
-          </div>
+          <Link href={"/"}>
+            <div className="flex items-center text-2xl text-[#212425] font-bold">
+              LOGO
+            </div>
+          </Link>
           <div className="hidden lg:flex gap-20 text-xl text-[#212425] font-normal">
-            <p onClick={() => scrollToSection("Home")}>Home</p>
-            <p onClick={() => scrollToSection("AboutMe")}>About me</p>
-            <p onClick={() => scrollToSection("Cases")}>Cases</p>
+            <Link href={"/"}>
+              <p>Home</p>
+            </Link>
+            <Link href={"./about"}>
+              <p>About me</p>
+            </Link>
+            <Link href={"./cases"}>
+              <p>Cases</p>
+            </Link>
           </div>
           <div className="hidden lg:flex items-center">
             <a href="mailto:your-email@example.com">
@@ -77,16 +70,22 @@ const Navbar = () => {
       </div>
       {/* Mobile menu outside of the container */}
       {mobileMenu && (
-        <div className="flex relative flex-col justify-around bg-white w-full h-screen">
+        <div className="flex relative flex-col justify-around bg-white w-full h-screen pt-6">
           <div className="flex justify-around items-center lg:bg-gradient-to-b bg-[#FBF4EC] from-[#FBF4EC] to-transparent rounded-3xl p-5 mx-auto w-3/4">
             <nav className="flex justify-between w-full">
               <div className="flex items-center text-2xl text-[#212425] font-bold">
                 LOGO
               </div>
               <div className="hidden lg:flex gap-20 text-xl text-[#212425] font-normal">
-                <p onClick={() => scrollToSection("Home")}>Home</p>
-                <p onClick={() => scrollToSection("AboutMe")}>About me</p>
-                <p onClick={() => scrollToSection("Cases")}>Cases</p>
+                <Link href={"/"}>
+                  <p>Home</p>
+                </Link>
+                <Link href={"./about"}>
+                  <p>About me</p>
+                </Link>
+                <Link href={"./cases"}>
+                  <p>Cases</p>
+                </Link>
               </div>
               <div className="hidden lg:flex items-center">
                 <a href="mailto:your-email@example.com">

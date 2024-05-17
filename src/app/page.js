@@ -1,5 +1,6 @@
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -63,7 +64,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <section
         className="w-full flex flex-col lg:flex-row justify-center lg:flex-1 flex-nowrap overflow-hidden relative p-5 lg:p-10 gap-0 lg:gap-10"
         id="AboutMe"
@@ -105,7 +105,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <section
         className="flex flex-col items-center w-full gap-4 lg:gap-7 p-5 lg:p-10"
         id="Cases"
@@ -119,137 +118,146 @@ export default function Home() {
         <div className="flex flex-col  gap-10 w-full">
           <div className="flex flex-col  lg:flex-row gap-5 w-full">
             <div className="w-full lg:w-1/2 flex flex-col gap-2 lg:gap-7">
-              <div className="hover:scale-95 transition-transform duration-300 ease-out">
-                <img
-                  src="https://framerusercontent.com/images/hgkedkVkKB4C6AJXYbXRwWHVvKk.png?scale-down-to=512"
-                  className="w-full lg:h-[450px]"
-                />
-              </div>
-              <div>
-                <p className="text-[#707070] text-base lg:text-lg">
-                  marketing website redesign
-                </p>
-                <p className="text-[#006cff] text-3xl lg:text-5xl">
-                  Young brevers
-                </p>
-              </div>
-              <p className="text-[#707070] text-base lg:text-lg">
-                New branding and optimised SEO to bring their products to a
-                wider target audience
-              </p>
-              <div className="flex justify-center items-center gap-2 bg-[#4C48FF] hover:bg-[#006cff] rounded-3xl  lg:w-40 p-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <polygon
-                    points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7"
-                    fill="#ffffff"
+              <Link href="./cases/young-brevers">
+                <div className="hover:scale-95 transition-transform duration-300 ease-out">
+                  <img
+                    src="https://framerusercontent.com/images/hgkedkVkKB4C6AJXYbXRwWHVvKk.png?scale-down-to=512"
+                    className="w-full lg:h-[450px]"
                   />
-                </svg>
-                <p className="text-lg text-[#ffffff]">View case</p>
-              </div>
+                </div>
+                <div>
+                  <p className="text-[#707070] text-base lg:text-lg">
+                    marketing website redesign
+                  </p>
+                  <p className="text-[#006cff] text-3xl lg:text-5xl">
+                    Young brevers
+                  </p>
+                </div>
+                <p className="text-[#707070] text-base lg:text-lg">
+                  New branding and optimised SEO to bring their products to a
+                  wider target audience
+                </p>
+                <div className="flex justify-center items-center gap-2 bg-[#4C48FF] hover:bg-[#006cff] rounded-3xl  lg:w-40 p-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7"
+                      fill="#ffffff"
+                    />
+                  </svg>
+                  <p className="text-lg text-[#ffffff]">View case</p>
+                </div>
+              </Link>
             </div>
             <div className="w-full lg:w-1/2 flex flex-col gap-2 lg:gap-7">
-              <div className="hover:scale-95 transition-transform duration-300 ease-out">
-                <img
-                  src="https://framerusercontent.com/images/NvwVqA2cc2VOr8ynoXO4JLQbgpM.png?scale-down-to=512"
-                  className="w-full lg:h-[450px]"
-                />
-              </div>
-
-              <div>
-                <p className="text-[#707070] text-base lg:text-lg">
-                  marketing website redesign
-                </p>
-                <p className="text-[#006cff] text-3xl lg:text-5xl">Doid</p>
-              </div>
-              <p className="text-[#707070] text-base lg:text-lg">
-                New branding and optimised SEO to bring their products to a
-                wider target audience
-              </p>
-              <div className="flex justify-center items-center gap-2 bg-[#4C48FF] hover:bg-[#006cff] rounded-3xl lg:w-40 p-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <polygon
-                    points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7"
-                    fill="#ffffff"
+              {" "}
+              <Link href="./cases/doid">
+                <div className="hover:scale-95 transition-transform duration-300 ease-out">
+                  <img
+                    src="https://framerusercontent.com/images/NvwVqA2cc2VOr8ynoXO4JLQbgpM.png?scale-down-to=512"
+                    className="w-full lg:h-[450px]"
                   />
-                </svg>
-                <p className="text-lg text-[#ffffff]">View case</p>
-              </div>
+                </div>
+
+                <div>
+                  <p className="text-[#707070] text-base lg:text-lg">
+                    marketing website redesign
+                  </p>
+                  <p className="text-[#006cff] text-3xl lg:text-5xl">Doid</p>
+                </div>
+                <p className="text-[#707070] text-base lg:text-lg">
+                  New branding and optimised SEO to bring their products to a
+                  wider target audience
+                </p>
+                <div className="flex justify-center items-center gap-2 bg-[#4C48FF] hover:bg-[#006cff] rounded-3xl lg:w-40 p-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7"
+                      fill="#ffffff"
+                    />
+                  </svg>
+                  <p className="text-lg text-[#ffffff]">View case</p>
+                </div>
+              </Link>
             </div>
           </div>
           <div className="flex flex-col  lg:flex-row gap-5 w-full">
             <div className="w-full lg:w-1/2 flex flex-col gap-2 lg:gap-7">
-              <div className="hover:scale-95 transition-transform duration-300 ease-out">
-                <img
-                  src="https://framerusercontent.com/images/p9GCIdND3wX9DEnEqfed3by4Rrc.png?scale-down-to=512"
-                  className="w-full lg:h-[450px]"
-                />
-              </div>
-              <div>
-                <p className="text-[#707070] text-base lg:text-lg">
-                  marketing website redesign
-                </p>
-                <p className="text-[#006cff] text-3xl lg:text-5xl">Bird</p>
-              </div>{" "}
-              <p className="text-[#707070] text-base lg:text-lg">
-                New branding and optimised SEO to bring their products to a
-                wider target audience
-              </p>
-              <div className="flex justify-center items-center gap-2 bg-[#4C48FF] hover:bg-[#006cff] rounded-3xl lg:w-40 p-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <polygon
-                    points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7"
-                    fill="#ffffff"
+              <Link href="./cases/birds">
+                <div className="hover:scale-95 transition-transform duration-300 ease-out">
+                  <img
+                    src="https://framerusercontent.com/images/p9GCIdND3wX9DEnEqfed3by4Rrc.png?scale-down-to=512"
+                    className="w-full lg:h-[450px]"
                   />
-                </svg>{" "}
-                <p className="text-lg text-[#ffffff]">View case</p>
-              </div>
+                </div>
+                <div>
+                  <p className="text-[#707070] text-base lg:text-lg">
+                    marketing website redesign
+                  </p>
+                  <p className="text-[#006cff] text-3xl lg:text-5xl">Bird</p>
+                </div>{" "}
+                <p className="text-[#707070] text-base lg:text-lg">
+                  New branding and optimised SEO to bring their products to a
+                  wider target audience
+                </p>
+                <div className="flex justify-center items-center gap-2 bg-[#4C48FF] hover:bg-[#006cff] rounded-3xl lg:w-40 p-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7"
+                      fill="#ffffff"
+                    />
+                  </svg>{" "}
+                  <p className="text-lg text-[#ffffff]">View case</p>
+                </div>
+              </Link>
             </div>
             <div className="w-full lg:w-1/2 flex flex-col gap-2 lg:gap-7">
-              <div className="hover:scale-95 transition-transform duration-300 ease-out">
-                <img
-                  src="https://framerusercontent.com/images/wTyyIe6VkYknt5wcUfcrP3veI.png?scale-down-to=512"
-                  className="w-full lg:h-[450px]"
-                />
-              </div>
-              <div>
-                <p className="text-[#707070] text-base lg:text-lg">
-                  marketing website redesign
-                </p>
-                <p className="text-[#006cff] text-3xl lg:text-5xl">Mansion</p>
-              </div>
-              <p className="text-[#707070] text-base lg:text-lg">
-                New branding and optimised SEO to bring their products to a
-                wider target audience
-              </p>
-              <div className="flex justify-center items-center gap-2 bg-[#4C48FF] hover:bg-[#006cff] rounded-3xl lg:w-40 p-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <polygon
-                    points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7"
-                    fill="#ffffff"
+              <Link href="./cases/mansion">
+                <div className="hover:scale-95 transition-transform duration-300 ease-out">
+                  <img
+                    src="https://framerusercontent.com/images/wTyyIe6VkYknt5wcUfcrP3veI.png?scale-down-to=512"
+                    className="w-full lg:h-[450px]"
                   />
-                </svg>{" "}
-                <p className="text-lg text-[#ffffff]">View case</p>
-              </div>
+                </div>
+                <div>
+                  <p className="text-[#707070] text-base lg:text-lg">
+                    marketing website redesign
+                  </p>
+                  <p className="text-[#006cff] text-3xl lg:text-5xl">Mansion</p>
+                </div>
+                <p className="text-[#707070] text-base lg:text-lg">
+                  New branding and optimised SEO to bring their products to a
+                  wider target audience
+                </p>
+                <div className="flex justify-center items-center gap-2 bg-[#4C48FF] hover:bg-[#006cff] rounded-3xl lg:w-40 p-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7"
+                      fill="#ffffff"
+                    />
+                  </svg>{" "}
+                  <p className="text-lg text-[#ffffff]">View case</p>
+                </div>{" "}
+              </Link>
             </div>
           </div>
         </div>
