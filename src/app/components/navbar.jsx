@@ -25,10 +25,10 @@ const Navbar = () => {
             <Link href={"/"}>
               <p>Home</p>
             </Link>
-            <Link href={"./about"}>
+            <Link href={"/about"}>
               <p>About me</p>
             </Link>
-            <Link href={"./cases"}>
+            <Link href={"/cases"}>
               <p>Cases</p>
             </Link>
           </div>
@@ -70,7 +70,7 @@ const Navbar = () => {
       </div>
       {/* Mobile menu outside of the container */}
       {mobileMenu && (
-        <div className="flex relative flex-col justify-around bg-white w-full h-screen pt-6">
+        <div className="flex relative lg:hidden flex-col justify-around bg-white w-full h-screen pt-6">
           <div className="flex justify-around items-center lg:bg-gradient-to-b bg-[#FBF4EC] from-[#FBF4EC] to-transparent rounded-3xl p-5 mx-auto w-3/4">
             <nav className="flex justify-between w-full">
               <div className="flex items-center text-2xl text-[#212425] font-bold">

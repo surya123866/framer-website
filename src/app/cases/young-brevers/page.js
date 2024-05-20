@@ -7,12 +7,14 @@ const YoungBrewers = () => {
   return (
     <>
       <Navbar />
-      <section className="flex flex-col justify-center gap-10 w-full p-20 pt-40">
-        <div className="flex flex-col gap-6">
-          <p className="text-[#333333] text-lg">Marketing website redesign</p>
-          <h2 className="text-[#006cff] text-7xl">Young brewers</h2>
+      <section className="flex flex-col justify-center gap-10 w-full p-8 lg:p-20 pt-40">
+        <div className="flex flex-col gap-3 lg:gap-6">
+          <p className="text-[#333333] text-xs lg:text-lg">
+            Marketing website redesign
+          </p>
+          <h2 className="text-[#006cff] text-3xl lg:text-7xl">Young brewers</h2>
 
-          <div class="overflow-hidden h-[600px] rounded-3xl">
+          <div class="overflow-hidden lg:h-[600px] rounded-3xl">
             <img
               src="https://framerusercontent.com/images/hgkedkVkKB4C6AJXYbXRwWHVvKk.png"
               class="w-full h-full object-cover"
@@ -20,14 +22,14 @@ const YoungBrewers = () => {
           </div>
         </div>
 
-        <p className="text-3xl text-[#333333] font-bold">
+        <p className="text-base lg:text-3xl text-[#333333] font-bold">
           New branding and optimised SEO to bring <br /> their products to a
           wider target audience.
         </p>
 
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-4 lg:gap-8">
           <p className="text-[#006cff] text-lg">Research</p>
-          <p className="text-base text-[#333333]">
+          <p className="text-base lg:text-lg text-[#333333]">
             The goal of this project was to redesign the website of a local
             bookstore, Bookworms, to improve its online presence and increase
             its sales. I conducted user research to understand the needs,
@@ -37,9 +39,9 @@ const YoungBrewers = () => {
             opportunities for improvement.
           </p>
         </div>
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-4 lg:gap-8">
           <p className="text-[#006cff] text-lg">Storytelling</p>
-          <p className="text-base text-[#333333]">
+          <p className="text-base lg:text-lg text-[#333333]">
             Based on the research findings, I created a storyboard to illustrate
             the current and desired user experience of browsing and buying books
             from Bookworms. The storyboard showed how the website redesign could
@@ -51,9 +53,9 @@ const YoungBrewers = () => {
           </p>
         </div>
         <img src="https://framerusercontent.com/images/iOBzCh281caYC6yhtfiTnrU.png" />
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-4 lg:gap-8">
           <p className="text-[#006cff] text-lg">Design</p>
-          <p className="text-base text-[#333333]">
+          <p className="text-base lg:text-lg text-[#333333]">
             I followed a user-centered design process to create the wireframes,
             mockups, and prototypes of the new website. I used tools such as
             Figma, Adobe XD, and InVision to design the interface and
@@ -64,9 +66,9 @@ const YoungBrewers = () => {
             and screen sizes.
           </p>
         </div>
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-4 lg:gap-8">
           <p className="text-[#006cff] text-lg">Iteration</p>
-          <p className="text-base text-[#333333]">
+          <p className="text-base lg:text-lg text-[#333333]">
             I tested the prototypes with real users to evaluate the design and
             collect feedback. I used methods such as usability testing,
             heuristic evaluation, and A/B testing to measure the effectiveness,
@@ -78,9 +80,9 @@ const YoungBrewers = () => {
           </p>
         </div>
         <img src="https://framerusercontent.com/images/Jz4zSGKf0XLbgSwNdaglqS1IE.png" />
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-4 lg:gap-8">
           <p className="text-[#006cff] text-lg">Final product</p>
-          <p className="text-base text-[#333333]">
+          <p className="text-base lg:text-lg text-[#333333]">
             The final product was a redesigned website that met the expectations
             and goals of both the users and the bookstore. The website offered a
             better user experience and a more appealing visual design. The
@@ -89,9 +91,9 @@ const YoungBrewers = () => {
             the users and the bookstore owners.
           </p>
         </div>
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-4 lg:gap-8">
           <p className="text-[#006cff] text-lg">What I learned</p>
-          <p className="text-base text-[#333333]">
+          <p className="text-base lg:text-lg text-[#333333]">
             This project was a valuable learning experience for me as a UX
             designer. I learned how to apply the user research and design
             methods in a real-world context. I learned how to communicate and
@@ -101,11 +103,11 @@ const YoungBrewers = () => {
             problem and created value for the users and the business.
           </p>
         </div>
-        <div className="bg-[#006cff] p-8 rounded-3xl">
-          <h1 className="text-[#F4F4F4] font-bold text-[40px]">
+        <div className="flex flex-col gap-4 bg-[#006cff] p-4 lg:p-8 rounded-3xl">
+          <h1 className="text-[#F4F4F4] font-bold text-[23px] lg:text-[40px]">
             Words from the client.
           </h1>
-          <p className="text-[#F4F4F4] font-extralight text-[40px]">
+          <p className="text-[#F4F4F4] font-extralight text-lg text-[40px] leading-0">
             “Working with Sarah has been an absolute pleasure. Our company's
             rebranding was a huge success, thanks to their talent and dedication
             we managed to double our sales.”
